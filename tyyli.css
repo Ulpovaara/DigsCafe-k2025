@@ -1,5 +1,7 @@
 /* kaikille yhteiset koodit */
 
+/*
+
 @media (prefers-color-scheme: dark) {
     body {
       background-color: white;
@@ -9,13 +11,15 @@
 
 * {
     color: #000000;
-    background-color: #21d084;
+    background-color: #e8f0ed;
     font-family: Roboto, sans-serif;
-}
+}*/
+
 
 body {
-    color: black;
-    background-color: white;
+        background-color: white !important; /* Pidä tausta valkoisena */
+        color: black !important; /* Pidä teksti mustana */
+    
     font-family: Roboto, sans-serif;
 }
 
