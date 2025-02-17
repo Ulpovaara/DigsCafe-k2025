@@ -1,6 +1,11 @@
-/* kaikille yhteiset koodit */'
-:root {color: black;
-    background-color: white;}
+/* kaikille yhteiset koodit */
+
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: white;
+      color: black;
+    }
+  }
 
 body {
     color: black;
