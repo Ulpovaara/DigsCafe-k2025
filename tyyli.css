@@ -28,19 +28,16 @@ body {
     font-family: Roboto, sans-serif;
 }*/
 
-*/
 
 @media (forced-colors: active) {
-    body {
-      background-color: white;
-      color: black;
-      font-family: Roboto, sans-serif;
-    }
+  body {background-color: red;
+       color: black}
+   
   }
 
   body {
-    background-color: white !important; 
-    color: black !important; 
+    background-color: white;
+    color: black;
     font-family: Roboto, sans-serif;
 }
 
