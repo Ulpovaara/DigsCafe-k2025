@@ -1,0 +1,55 @@
+/* kaikille yhteiset koodit */
+body {
+    color: black;
+    background-color: white;
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-family: "Staatliches", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+}
+.logo {vertical-align: middle;}
+
+header, footer {text-align: center;}
+
+.korostus {color:red}
+
+.tuotekuva {width: 80%;
+           max-width: 400px;
+           display: block;
+           margin:auto}
+
+/*
+div p {background-color:  aqua;
+       padding: 20px;
+       margin-left: 20%;
+       border:solid blue 5px }
+*/
+
+/* mobiili */
+@media only screen and (max-width:440px) {
+
+   
+}
+
+@media only screen and (min-width:441px) {
+
+    .flex_container {display: flex;}
+    .flex_item {flex:1}
+
+    main {background-image: url(kuvat/tausta_kuppi.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;}
+
+}
+
+@media only screen and (min-width:1200px) {
+    body {width: 1200px;
+    border:solid 1px black;
+    margin: auto;
+    padding: 0 10px 0 10px;}        
+
+}
