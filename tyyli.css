@@ -13,15 +13,31 @@
     color: #000000;
     background-color: #e8f0ed;
     font-family: Roboto, sans-serif;
-}*/
-
-
+}
+    
 body {
-        background-color: white !important; /* Pidä tausta valkoisena */
-        color: black !important; /* Pidä teksti mustana */
+  force-color-adjust: none;
+}
+
+On hyvä muistaa, että käyttäjien esteettömyysasetukset ovat tärkeitä heidän käyttökokemuksensa kannalta. On suositeltavaa suunnitella sivusto niin, että se toimii hyvin myös suuren kontrastin tilassa.
+
+Jos tarvitset lisää apua tai sinulla on muita kysymyksiä, kerro siitä! 😊
+*/
+
+@media (forced-colors: active) {
+    body {
+      background-color: white;
+      color: black;
+    }
+  }
+
+/*
+body {
+        background-color: white !important; 
+        color: black !important; 
     
     font-family: Roboto, sans-serif;
-}
+}*/
 
 h1 {
     font-family: "Staatliches", serif;
