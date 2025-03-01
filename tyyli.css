@@ -43,7 +43,7 @@ header, footer {text-align: center;}
 footer {background-color: var(--background-color-effect);
 padding:5px}
 
-main {padding: 5px;}
+main {padding: 10px;}
 
 a {color: var(--secondary-color)}
 
@@ -78,11 +78,13 @@ div p {background-color:  aqua;
 @media only screen and (max-width:440px) {
 
 header {display: flex;
-       flex-direction: column-reverse;}
+       flex-direction: column-reverse;
+    }
     
 #topnav li {display: block;
-            text-align: left;}
-#topnav a {font-size: 1.5em;}
+            text-align: left;
+            margin-left:5px}
+#topnav a {font-size: 2em;}
 #topnav ul {border-bottom: 1px solid var(--secondary-color);
             padding-bottom:10px}
 
