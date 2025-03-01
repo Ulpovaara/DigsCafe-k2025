@@ -1,47 +1,66 @@
+/*muuttujien määrittely */
+:root {
+
+    --primary-color:#B30000;
+    --secondary-color:rgb(27, 38, 192);
+    --text-color:black;
+    --background-color:white;
+    --background-color-effect: rgb(184, 212, 245);    
+}
+
+/*
+    --main-font: 'Arial, sans-serif';
+    --heading-font-size: 2em;
+    --body-font-size: 1em;
+
+    --main-padding: 20px;
+    --main-margin: 10px;
+
+    --small-screen: 480px;
+    --medium-screen: 768px;
+    --large-screen: 1024px;*/
 /* kaikille yhteiset koodit */
 
 
-body {
-        background-color: white !important; 
-        color: black !important; 
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Roboto, sans-serif;
+    margin:0px;
     
-    font-family: Roboto, sans-serif;
-}*/
-
-
-  body {
-    forced-color-adjust: none;
-  }
-
-  body {
-    background-color: white;
-    color: black;
-    font-family: Roboto, sans-serif;
-}
+   }
 
 
 h1 {
     font-family: "Staatliches", serif;
-    font-weight: 400;
-    font-style: normal;
     font-size: 3em;
+    color: var(--primary-color);
 }
 
 .logo {vertical-align: middle;}
 
 header, footer {text-align: center;}
+footer {background-color: var(--background-color-effect);
+padding:5px}
+
+main {padding: 5px;}
+
+a {color: var(--secondary-color)}
 
 /* navigointi */
+
 #topnav a {text-decoration: none;
-           color:red}
+           color:var(--primary-color)}
+
 #topnav li {display: inline-block;
             padding-left: 5px;
             padding-right: 5px;}
+            
 #topnav ul {padding-left: 0px;}
 
 /* navigointi loppuu */
 
-.korostus {color:red}
+.korostus {color:var(--primary-color)}
 
 .tuotekuva {width: 80%;
            max-width: 400px;
@@ -63,8 +82,9 @@ header {display: flex;
     
 #topnav li {display: block;
             text-align: left;}
-#topnav a {font-size: 1.2em;}
-#topnav ul {border-bottom: 1px solid red;}
+#topnav a {font-size: 1.5em;}
+#topnav ul {border-bottom: 1px solid var(--secondary-color);
+            padding-bottom:10px}
 
 }
 
@@ -81,7 +101,7 @@ header {display: flex;
 
 @media only screen and (min-width:1200px) {
     body {width: 1200px;
-    border:solid 1px black;
+    border:solid 1px var(--secondary-color);
     margin: auto;
     padding: 0 10px 0 10px;}        
 
